@@ -24,4 +24,6 @@ b. floor (v * 8)
 
 c. White, (floor(.375 * 8),floor(.25 * 8)) = (3,2) -> White
 
+Video Link: https://drive.google.com/open?id=1aDVFWVXTnWgCfvl6sSNx9OI-NqwKr1yy
+
 

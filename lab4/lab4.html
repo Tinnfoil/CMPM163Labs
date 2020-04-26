@@ -10,6 +10,33 @@
 	</head>
 	<body>
 		<script src="../three.js-master/build/three.js"></script>
+		
+		<script id="vertexShader2" type="x-shader/x-vertex">
+			// code for vertex shader
+			varying vec2 vUv;
+			void main() {
+				vUv = uv;
+				vec4 modelViewPosition = modelViewMatrix * vec4(position, 1.0);
+				gl_Position = projectionMatrix * modelViewPosition;
+			}
+		</script>
+
+		<script id="fragmentShader2" type="x-shader/x-fragment">
+			// code for fragment shader
+			uniform sampler2D texture1;
+			varying vec2 vUv;
+			void main() {
+				vec2 result = vUv;
+				if(vUv.x > 0.5){
+					result.x -= 0.5;
+				}
+				if(vUv.y > 0.5){
+					result.y -= 0.5;
+				}
+				gl_FragColor = texture2D(texture1, result*2.0);
+			}
+		</script>
+
 		<script>
 			// setup the scene
       		var scene = new THREE.Scene();
@@ -18,7 +45,7 @@
       		var renderer = new THREE.WebGLRenderer();
       		renderer.setSize(window.innerWidth, window.innerHeight);
       		document.body.appendChild(renderer.domElement);
-			camera.position.z = 4.5;
+			camera.position.z = 5;
 			
 			// setup the cube
 			var geometry = new THREE.BoxGeometry();
@@ -54,11 +81,7 @@
 
 			function addTextureShaderCube() {
 				if(count == 2) {
-					let uniforms = {
-        				colorB: {type: 'vec3', value: new THREE.Color(0xACB6E5)},
-        				colorA: {type: 'vec3', value: new THREE.Color(0x74ebd5)}
-        			};
-	
+					var uniforms = {texture1: { type: "t", value: THREE.ImageUtils.loadTexture("186.jpg")}};
       				geometry1 = new THREE.BoxGeometry(1, 1, 1);
       				material1 =  new THREE.ShaderMaterial({
 					uniforms: uniforms,
@@ -88,7 +111,7 @@
       		function (err) {
       			console.error('An error happened');
       		});
-
+			
 			loader.load('shaders/fragmentShader.frag',
       		// onLoad callback
       		function (data) {
@@ -105,7 +128,18 @@
       		function (err) {
       			console.error('An error happened');
       		});
-
+			
+			var uniforms = {texture1: { type: "t", value: THREE.ImageUtils.loadTexture("176_norm.jpg")}};
+			var geometry3 = new THREE.BoxGeometry(1, 1, 1);
+			var material4 = new THREE.ShaderMaterial({
+				uniforms: uniforms,
+				vertexShader: document.getElementById('vertexShader2').textContent,
+				fragmentShader: document.getElementById('fragmentShader2').textContent,
+				precision: "mediump"
+			});
+			mesh2 = new THREE.Mesh(geometry3, material4);
+      		mesh2.position.x = -4;
+      		scene.add(mesh2);		
 
 			var time = 0;
 			var origin = 0;

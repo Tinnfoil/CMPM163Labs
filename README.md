@@ -17,6 +17,11 @@ The second on the top was made with mixing two colors discretely twice. The imag
 # Lab 4
 
 Questions:
+
 a. floor (u * 8)
+
 b. floor (v * 8)
+
 c. White, (floor(.375 * 8),floor(.25 * 8)) = (3,2) -> White
+
+

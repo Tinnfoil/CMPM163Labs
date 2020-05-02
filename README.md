@@ -28,4 +28,8 @@ Video Link: https://drive.google.com/open?id=1aDVFWVXTnWgCfvl6sSNx9OI-NqwKr1yy
 
 I made the three middle cube doing the same thing instructed in the tutorial. Adding a texture using three's in built texture loader. For the right cube, I loaded it in using the shaders from the pervious lab as a template. Because of this, it isn't effected by the lights in the scene. The left cube is implemented using the in-script method for shaders. I also made the 2x2 grid for the texture by multiplying the uVu by 2 but keeping it in the ranges of 0-1. Only coming back to 1 once it passes the 0.5 mark.
 
+# Lab 5
 
+Video Link: https://drive.google.com/open?id=10KciVECCt6IIMnYHd-EQeWBN1GpHggw3
+
+There are a few things I added to the Unity Scene and particle effects. The particle effect increases in emission rate depending on the speed of the kart. I added trails to the kart. And the particle effects also have colliders, so they bounce off of walls and ground. I extended the scene to the further down and let the player hop with the space button 

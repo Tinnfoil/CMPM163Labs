@@ -33,3 +33,9 @@ I made the three middle cube doing the same thing instructed in the tutorial. Ad
 Video Link: https://drive.google.com/open?id=10KciVECCt6IIMnYHd-EQeWBN1GpHggw3
 
 There are a few things I added to the Unity Scene and particle effects. The particle effect increases in emission rate depending on the speed of the kart. I added trails to the kart. And the particle effects also have colliders, so they bounce off of walls and ground. I extended the scene to the further down and let the player hop with the space button 
+
+# Lab 6
+
+<img src ="images/Lab6AllLights.png" width = 800>
+
+<img src ="images/Lab6Material.jpg" width = 800>

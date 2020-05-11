@@ -36,6 +36,17 @@ There are a few things I added to the Unity Scene and particle effects. The part
 
 # Lab 6
 
+Examples of lights and textured objects in the scene. There is a wooden texture on the tables and bookcases. And there is a tiled texture on the floor
+
 <img src ="images/Lab6AllLights.png" width = 800>
 
+Point Light: A light that eminates from one point. Rotating the light has no effect on the output
+Spotlight: A light that is directed in a cone shape toward a direction. Position and rotation effect it
+Directional Light: A light source that hit every object in the scene in a particular direction. Position has no effect on it
+Area Light: a light at directs light in a given direction. Similar to a directional and spotlight, but must be baked into the scene.
+
+Image of created material and added skybox
+
 <img src ="images/Lab6Material.jpg" width = 800>
+
+I made the object look like Tinfoil by getting first getting a metalic texture/color. Then I adjusted the reflection and coloring so that it shined from light. Shown in the picture. I opted to use a texture instead of mainly color since tinfoil looks unnatural if it was completely perfect. The skybox in the scene is a city skybox. THe image shows what it looks like looking down into it

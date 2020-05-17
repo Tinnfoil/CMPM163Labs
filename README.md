@@ -50,3 +50,9 @@ Image of created material and added skybox
 <img src ="images/Lab6Material.jpg" width = 800>
 
 I made the object look like Tinfoil by getting first getting a metalic texture/color. Then I adjusted the reflection and coloring so that it shined from light. Shown in the picture. I opted to use a texture instead of mainly color since tinfoil looks unnatural if it was completely perfect. The skybox in the scene is a city skybox. THe image shows what it looks like looking down into it
+
+# Lab 7
+
+Video Link: https://drive.google.com/open?id=1Sq0wCbEaizEtsQDtv1NW6xmctnsX68KZ
+
+I created my scene by positioning the respective planes and camera to give the look of a mountain range with lakes. The mountains also included adjustable snow and color to give it a green to white look. I also adjusted the emission color of the mountains so they are pure black as it is in default. All of these color adjustments created a pale and cool color pallete.

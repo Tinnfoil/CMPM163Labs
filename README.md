@@ -56,3 +56,19 @@ I made the object look like Tinfoil by getting first getting a metalic texture/c
 Video Link: https://drive.google.com/open?id=1Sq0wCbEaizEtsQDtv1NW6xmctnsX68KZ
 
 I created my scene by positioning the respective planes and camera to give the look of a mountain range with lakes. The mountains also included adjustable snow and color to give it a green to white look. I also adjusted the emission color of the mountains so they are pure black as it is in default. All of these color adjustments created a pale and cool color pallete.
+
+# Lab 8
+
+After the inital set up, it looked like this
+
+<img src ="images/Lab8B.png" width = 800>
+
+I wanted to make my city look like New York, so I wanted to keep it's unique set up and look
+
+<img src ="images/NewYork.jpg" width = 800>
+
+So after developing the city, it ended up looking like this. Which I think looks pretty similar
+
+<img src ="images/Lab8A.png" width = 800>
+
+I did this by creating gaps between sections, close clustering but having a way to prevent clipping between building. I also added rotations and height changes to make it look natural for buildings that looked the same. The pcg also creates a gap that should resemble the central park in New York city. 
